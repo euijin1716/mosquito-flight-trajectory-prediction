@@ -1,0 +1,25 @@
+# ── 대회 데이터 (재배포 금지) — DACON에서 직접 받아 Data/ 에 배치 ──
+Data/
+
+# ── 노트북·발표자료 (코드 외 — 용량 크고, 발표자료엔 학번·이름 포함) ──
+notebook/
+ppt/
+
+# ── 재생성 가능한 대용량 산출물 ──
+# 학습 가중치 (models/ — 코드로 재학습 가능, ~50분)
+models/*
+!models/.gitkeep
+# 제출 csv (goh30로 재생성)
+submissions/*.csv
+# 단, 우승 제출본은 참조용으로 포함
+!submissions/submission_0531_1800_GOH30.csv
+# 학습 캐시 (build_cache로 ~15초·비트동일 재생성 → git 제외)
+experiments/train_cache.npz
+experiments/*_oof.npz
+experiments/log_*.txt
+# norm_stats.npz(1.3KB)는 git 포함 — 비트 재현 앵커 (raw 재생성 시 ~1e-6 차이)
+
+# ── 시스템 / 캐시 ──
+__pycache__/
+*.pyc
+.DS_Store

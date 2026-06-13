@@ -1,0 +1,8 @@
+# GOH30 재현 환경 — conda DA_project 기준 (Python 3.11, Apple Silicon MPS)
+# 비트동일 재현은 이 버전 조합 기준. 다른 버전이면 점수(~0.7035)는 재현되나
+# 비트는 다를 수 있음 (README §5 참고).
+numpy==2.4.6
+pandas==3.0.3
+torch==2.12.0
+scikit-learn==1.8.0
+tqdm==4.67.3
